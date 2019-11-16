@@ -1,0 +1,17 @@
+body {
+    padding: 20px;
+    background-color: #DA291C;
+}
+
+h1 {
+    font-size: 5.5em;
+}
+
+#heading {
+    text-align: center;
+    color: #FFC72C;
+}
+
+.done-button {
+    text-align: center;
+}
