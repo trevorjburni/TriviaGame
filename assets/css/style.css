@@ -31,3 +31,19 @@ form {
     padding:20px;
     margin: 20px;
 }
+
+.start {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+#start-button {
+    width: 200px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 28px;
+    color: #DA291C;
+
+}
