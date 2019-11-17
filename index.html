@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 </head>
 
@@ -18,33 +18,135 @@
     <div class="container">
         <div id="heading">
             <h1>
-                McDonald's Triva Game
+                McDonald's Trivia Game
             </h1>
         </div>
         <div class="trivia">
             <div class="timer row">
-                <div class="col-lg-2"></div>
-                <div class="col-lg-4">
-                    <h3>Time Remaining:</h3>
+                <div class="col-lg-4"></div>
+                <div class="col-lg-2">
+                    <h3>Time Remaining: </h3>
                 </div>
-                <div class="col-lg-4">
-                    <h3 id="time-remaining"></h3>
+                <div class="col-lg-2">
+                    <h3 id="time-remaining">00:00</h3>
                 </div>
-                <div class="col-lg-2"></div>
+                <div class="col-lg-4"></div>
             </div>
             <form>
-            <div class="questions">
-                <div class="question question-1"></div>
-                <div class="question question-2"></div>
-                <div class="question question-3"></div>
-                <div class="question question-4"></div>
-                <div class="question question-5"></div>
-            </div>
-            <div class="done-button">
-                <button type="button" id="button-selector">Done</button>
+                <div class="questions">
+                    <div class="question question-1">Who founded McDonalds?</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">4</label>
+                    </div>
+
+                    <hr>
+
+                    <div class="question question-2">What year was the Big Mac introduced?</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">4</label>
+                    </div>
+
+                    <hr>
+
+                    <div class="question question-3">What was the cost of the first Big Mac?</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">4</label>
+                    </div>
+                    
+                    <hr>
+
+                    <div class="question question-4">How many countries is Mcdonalds in today?</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">1</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">2</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">3</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">4</label>
+                    </div>
+
+                    <hr>
+
+                    <div class="question question-5">Did Trevor Burningham work at Mcdonalds?</div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                            value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Most definitely not.</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                            value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Most definitely did, and for 6 years.</label>
+                    </div>
+                </div>
+                <div class="done-button">
+                    <button type="button" id="button-selector">Done</button>
             </form>
-            </div>
         </div>
+    </div>
     </div>
 </body>
 

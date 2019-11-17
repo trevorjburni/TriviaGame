@@ -31,12 +31,12 @@ setTimeout(timeUp, 1000 * 60);
         var converted = timeConverter(seconds);
         console.log(converted);
         // DONE: Use the variable we just created to show the converted time in the "display" div.
-        $("#time-left").text(converted);
+        $("#time-remaining").text(converted);
       }    
       start();
     // Time's up function
     function timeUp() {
-        $("#time-left").text("Time's up!");
+        $("#time-remaining").text("Time's up!");
         clearInterval(intervalId);
     }
   };
@@ -44,7 +44,7 @@ setTimeout(timeUp, 1000 * 60);
 // Main Processes 
 // ============================================
 // Start countdown 
-$("#time-left").text("00:60");
+$("#time-remaining").text("00:60");
 function timeConverter(t) {
   var minutes = Math.floor(t / 60);
   var seconds = t - (minutes * 60);
