@@ -1,25 +1,12 @@
-// Declare variables
-// ============================================
-// var seconds = 60;
-// var intervalId;
-// var correct;
-// var inCorrect;
-// var timeUp;
-// var myQuestions = []
-// var myAnswer = [""]
-// setTimeout(timeUp, 1000 * 15);
-// Create Functions
-// ============================================
-// Count Function
 window.onload = function() {
-    var seconds = 60;
+    var seconds = 30;
     var intervalId;
     var correct;
     var inCorrect;
     var timeUp;
     var myQuestions = []
     var myAnswer = [""]
-setTimeout(timeUp, 1000 * 60);
+setTimeout(timeUp, 1000 * 30);
     // Start function 
     function start() {
         intervalId = setInterval(count, 1000);    
